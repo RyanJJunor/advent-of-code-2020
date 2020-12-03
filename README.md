@@ -7,3 +7,7 @@ For part two, the second solution out performs the first with the first taking ~
 
 <b>Day 2.</b><br>
 Not the most elegent solution, but a solution.<br>
+
+<b>Day 3.</b><br>
+Quite happy with my solution, I chose to try and write the solution to part one in a way that would be maybe useful for part two, before having seen part two and it worked well. As my solution for part one calculates how many trees would be hit in a certain map when given a certain slope, I was able to just pass in the list and relevant slope for each journey in part two in to my solution for part one and multiply all of the results together. <br>
+
