@@ -40,7 +40,6 @@ def part_two():
 
 def part_one_2(list, down, right):
     length = (len(list[0]))
-
     iterations = int(math.floor(len(list) / down))
 
     trees = 0
@@ -51,8 +50,7 @@ def part_one_2(list, down, right):
         count_right = count_right + right
         count_down = count_down + down
 
-        if count_right >= length:
-            count_right = (count_right % length)
+        count_right = (count_right % length)
 
         if list[count_down][count_right] == "#":
             trees = trees + 1
