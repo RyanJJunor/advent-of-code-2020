@@ -15,7 +15,7 @@ Quite happy with my solution, I chose to try and write the solution to part one 
 
 <h1><b>Day 4.</b></h1>
 This felt like quite a decent jump in complexity.<br>
-I'm quite happy with my solution, I learned a new technique, a way of finding if all elements from a list are present in another list:
-<br><i>if all(x in list for x in required_elements):</i><br>
+I'm quite happy with my solution, I learned a new technique, a way of finding if all elements from a list are present in another list:<br>
+<br><i>if all(x in list for x in required_elements):</i><br><br>
 I can see that coming in useful.<br>
 This one was a good challenge.
