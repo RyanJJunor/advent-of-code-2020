@@ -56,7 +56,7 @@ def calculate_highest_id(list, rows, columns):
     return highest_id, expected
 
 
-def calculate_highest_id_2(list, rows, columns):
+def calculate_highest_id_2(list):
     ids = []
     highest_id = 0
 
@@ -66,10 +66,7 @@ def calculate_highest_id_2(list, rows, columns):
         boarding_pass = boarding_pass.replace("L", "0")
         boarding_pass = boarding_pass.replace("R", "1")
 
-        row_string = boarding_pass[0:7]
-        column_string = boarding_pass[7:10]
-
-        id = (int(row_string, 2) * 8) + int(column_string, 2)
+        id = int(boarding_pass, 2)
         ids.append(id)
 
         if id > highest_id:
@@ -89,5 +86,5 @@ def calculate_highest_id_2(list, rows, columns):
 
 
 print(calculate_highest_id(list, rows, columns))
-print(calculate_highest_id_2(list, rows, columns))
+print(calculate_highest_id_2(list))
 
