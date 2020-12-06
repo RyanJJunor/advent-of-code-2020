@@ -23,4 +23,8 @@ This one was a good challenge.
 <h1><b>Day 5.</b></h1>
 Nice and quick part two.
 I was quite happy with my solution where I was manually changing the upper and lower bounds of the region based the character encountered.<br>
-Then I came across the binary solution and my mind was blown. It's so nice and elegant. I had to add in to my code.
+Then I came across the binary solution and my mind was blown. It's so nice and elegant. I had to add in to my code.<br>
+
+<h1><b>Day 6.</b></h1>
+Nothing too special but still enjoyed it, savouring these more simple ones while I can.<br>
+
