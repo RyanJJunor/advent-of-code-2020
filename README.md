@@ -28,3 +28,8 @@ Then I came across the binary solution and my mind was blown. It's so nice and e
 <h1><b>Day 6.</b></h1>
 Nothing too special but still enjoyed it, savouring these more simple ones while I can.<br>
 
+
+<h1><b>Day 7.</b></h1>
+Had to really stop and think through what it was that I wanted to do. This one was a good challenge.<br>
+
+
