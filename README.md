@@ -32,4 +32,7 @@ Nothing too special but still enjoyed it, savouring these more simple ones while
 <h1><b>Day 7.</b></h1>
 Had to really stop and think through what it was that I wanted to do. This one was a good challenge.<br>
 
+<h1><b>Day 8.</b></h1>
+A nice wee challenge, I was thinking that this could be one that gets built upon in future days so I made an attempt at writing classes in Python, my first time doing so, so I need to check if I did it correctly. There is definitely a lot of room for improvement in my code this week so I would like to come back to it and make it nicer.<br>
+
 
