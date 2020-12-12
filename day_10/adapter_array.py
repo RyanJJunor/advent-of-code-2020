@@ -1,12 +1,15 @@
+import time
+start = time.time()
+
 f = open("output_joltage", "r").read().splitlines()
 
-list = []
+input = []
 for i in f:
-    list.append(int(i))
+    input.append(int(i))
 
 
-def find_diffs(list):
-    adapters = sorted(list)
+def find_diffs(input):
+    adapters = sorted(input)
 
     diff_1 = 0
     diff_2 = 0
@@ -28,7 +31,7 @@ def find_diffs(list):
     return diff_1, diff_2, diff_3 + 1
 
 
-def add_dict(list, tree ,num, x, y, z):
+def add_dict(tree ,num, x, y, z):
 
     one = num+1
     two = num+2
@@ -53,29 +56,29 @@ def add_dict(list, tree ,num, x, y, z):
             tree[num].append(z)
 
 
-def find_number_of_configurations(list):
+def generate_tree(input):
 
-    list.append(0)
-    list.append(max(list) + 3)
-    adapters = sorted(list)
+    input.append(0)
+    input.append(max(input) + 3)
+    adapters = sorted(input)
 
     tree = {}
 
     for i in range(len(adapters)):
 
         if i == len(adapters) - 3:
-            add_dict(list, tree, adapters[i], adapters[i+1], adapters[i+2], -1)
+            add_dict(tree, adapters[i], adapters[i+1], adapters[i+2], -1)
             continue
 
         if i == len(adapters) - 2:
-            add_dict(list, tree, adapters[i], adapters[i+1], -1, -1)
+            add_dict(tree, adapters[i], adapters[i+1], -1, -1)
             continue
 
         if i == len(adapters) - 1:
-            add_dict(list, tree, adapters[i], -1, -1, -1)
+            add_dict(tree, adapters[i], -1, -1, -1)
             continue
 
-        add_dict(list, tree, adapters[i], adapters[i + 1], adapters[i + 2], adapters[i +3])
+        add_dict(tree, adapters[i], adapters[i + 1], adapters[i + 2], adapters[i +3])
     return tree
 
 
@@ -96,31 +99,35 @@ def find_number_of_configurations(list):
 
 
 
-diff1, diff2, diff3 = find_diffs(list)
+diff1, diff2, diff3 = find_diffs(input)
 print(diff1 * diff3)
 
-import time
-start = time.time()
-tree = find_number_of_configurations(list)
+
+tree = generate_tree(input)
 #print(find_path(0, tree))
 
 
-#vals = []
-vals = {}
-for i in tree:
 
-    # vals.extend(tree[i])
-    # vals.extend((tree[i]) * (vals.count(i) - 1))
+def find_number_of_permutations(tree):
 
-    for j in tree[i]:
-        if j not in vals.keys():
-            if i in vals.keys():
-                vals[j] = vals[i]
-            else: vals[j] = 1
-        else:
-            vals[j] = vals[j] + (vals[i])
+    # vals = []
+    vals = {}
+    for i in tree:
 
-print(vals[max(vals)])
+        # vals.extend(tree[i])
+        # vals.extend((tree[i]) * (vals.count(i) - 1))
+
+        for j in tree[i]:
+            if j not in vals.keys():
+                if i in vals.keys():
+                    vals[j] = vals[i]
+                else: vals[j] = 1
+            else:
+                vals[j] = vals[j] + (vals[i])
+
+    return vals[max(vals)]
+
+print(find_number_of_permutations(tree))
 
 #print(vals.count(max(vals)))
 # total = 1
