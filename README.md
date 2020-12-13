@@ -49,3 +49,6 @@ Struggled along with part 2 for quite a while making changes I didn't need to be
 
 <h1><b>Day 12.</b></h1>
 A nice simple one, all caught up now.<br>
+
+<h1><b>Day 13.</b></h1>
+Finished Part 1, I have a solution for Part 2, but it would take too long to run. Will come back to this one, I think I maybe just don't know the Maths. <br>
