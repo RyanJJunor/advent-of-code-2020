@@ -44,6 +44,8 @@ I was determined to not look anything up, I wanted to figure it out by myself. M
 Finally I landed on my final solution which was essentially the same idea as the previous one, but rather than maintaining a huge list  where I was having to count how many times a specific adapters 'parent adapter' appeared in the list, I changed it to a dictionary, where the key was the 'joltage' rating of an adapter, and the value was how many times that adapter would appear in the tree. This made it much faster, with the whole process of finding the number of different combinations taking 0.0 seconds according to Python. To get the answer from this dictionary, I just returned the number of time that the largest key (joltage) would have occured.<br>
 Definitely not the best solution, but it's the one I came up with.<br>
 
-<h1><b>Day 10.</b></h1>
+<h1><b>Day 11.</b></h1>
 Struggled along with part 2 for quite a while making changes I didn't need to because I accidentally had a != instead of a ==.<br>
 
+<h1><b>Day 12.</b></h1>
+A nice simple one, all caught up now.<br>
