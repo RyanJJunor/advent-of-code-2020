@@ -114,6 +114,8 @@ def find_number_of_permutations(tree):
     vals = {}
     for i in tree:
 
+        print(i)
+
         # vals.extend(tree[i])
         # vals.extend((tree[i]) * (vals.count(i) - 1))
 
