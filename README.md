@@ -1,5 +1,7 @@
 # advent-of-code-2020
 
+Took a break, will hopefully get back in to it and complete it for the next one.
+
 <h1><b>Day 1.</b></h1>
 Included two solution for both part one and part two.<br>
 The two functions for task one take very similar times.<br>
